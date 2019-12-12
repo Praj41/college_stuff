@@ -3,6 +3,7 @@
 #include "swtcalc.h"
 #include "sumfact.h"
 #include "admat.h"
+#include <stdlib.h>
 
 void main() {
     int n = 0;
@@ -26,4 +27,5 @@ void main() {
             break;
         }
     }
+    exit(0);
 }
