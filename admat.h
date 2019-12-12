@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
 void matad()
 {
-    int a , b , i , j , k;
+    int a , b , i , j , k , l;
     printf("\nEnter the no. of rows\n");
     scanf("%d" , &a);
     printf("Enter the no. of columns\n");
     scanf("%d" , &b);
     int mat[3][a][b];
+    printf("1. Subtract\n2. Add\n");
+    scanf("%d" , &l);
     printf("\nEnter first matrix\n");
     for(i = 0 ; i < 2 ; i++)
     {
@@ -25,7 +28,7 @@ void matad()
     {
         for(k = 0 ; k < b ; k++)
         {
-            mat[2][j][k] = mat[0][j][k] + mat[1][j][k];
+            mat[2][j][k] = mat[0][j][k] + (mat[1][j][k]*pow(-1,l));
         }
     }
     printf("\nThe sum is:\n");
