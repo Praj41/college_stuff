@@ -2,6 +2,7 @@
 #include "prnom.h"
 #include "swtcalc.h"
 #include "sumfact.h"
+#include "admat.h"
 
 void main() {
     int n = 0;
@@ -18,11 +19,10 @@ void main() {
         }
         case 3: {
             calc_fs();
-
             break;
         }
         case 4: {
-
+            matad();
             break;
         }
     }
