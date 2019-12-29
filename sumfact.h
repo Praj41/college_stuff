@@ -1,18 +1,22 @@
 #include<stdio.h>
+
+int fact();
+
 void calc_fs()
 {
-    int n , fact = 1, sum = 0;
-    printf("Enter the number");
+    int n , sum = 0;
+    printf("Enter the number\n");
     scanf("%d" , &n);
     for(int i = n ; i > 0 ; i--)
     {
-        fact = 1;
-        for(int j = i ; j > 0 ; j--)
-        {
-            fact *= j;
-        }
-        printf("%d\n",fact);
-        sum += fact;
+        sum += fact(i);
     }
     printf("%d\n",sum);
+}
+
+int fact(int n)
+{
+    if (n == 0)
+        return 1;
+    return n * fact(n - 1);
 }

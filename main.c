@@ -3,6 +3,7 @@
 #include "swtcalc.h"
 #include "sumfact.h"
 #include "admat.h"
+#include "Fibcci.h"
 #include <stdlib.h>
 
 void main() {
@@ -24,6 +25,10 @@ void main() {
         }
         case 4: {
             matad();
+            break;
+        }
+        case 5: {
+            fib();
             break;
         }
     }
