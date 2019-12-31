@@ -32,8 +32,8 @@ void funcart() {
             }
             case 4: {
                 printf("We are dividing %d & %d\n", x, y);
-                z = x / y;
-                printf("Answer is = %d\n\n", z);
+                float ans = (float)x / y;
+                printf("Answer is = %f\n\n", ans);
                 break;
             }
         }
