@@ -4,6 +4,7 @@
 #include "sumfact.h"
 #include "admat.h"
 #include "Fibcci.h"
+#include "strex.h"
 #include <stdlib.h>
 
 void main() {
@@ -29,6 +30,10 @@ void main() {
         }
         case 5: {
             fib();
+            break;
+        }
+        case 6: {
+            stddta();
             break;
         }
     }
