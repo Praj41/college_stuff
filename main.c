@@ -5,7 +5,10 @@
 #include "admat.h"
 #include "Fibcci.h"
 #include "strex.h"
+#include "swptr.h"
+#include "FileRW.h"
 #include <stdlib.h>
+
 
 void main() {
     int n = 0;
@@ -34,6 +37,14 @@ void main() {
         }
         case 6: {
             stddta();
+            break;
+        }
+        case 7: {
+            swpr();
+            break;
+        }
+        case 8: {
+            flew();
             break;
         }
     }
